@@ -13,10 +13,9 @@ public class Bus extends Vehicle {
         // Rute perjalanan: sesuai dengan parameter yang diberikan
     }
 
-    public void calculateFare() {
-        int stops = 5; // Jumlah pemberhentian dalam perjalanan (asumsi tetap 5 halte)
+    public void calculateFare(int stops) {
         int totalFare = getCurrentPassengers() * stops * FARE_PER_STOP; // Menghitung total tarif perjalanan
-
+        
         // Menampilkan informasi total penumpang, total pemberhentian, tarif perjalanan bus, total tarif perjalanan bus
         System.out.println("Total penumpang: " + getCurrentPassengers());
         System.out.println("Total pemberhentian: " + stops);
