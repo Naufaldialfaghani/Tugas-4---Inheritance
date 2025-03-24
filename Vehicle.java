@@ -2,7 +2,7 @@ package praktic.inheritance.transportation; // Mendeklarasikan package tempat cl
 
 public class Vehicle { // Deklarasi class Vehicle sebagai class dasar
     private String name; // Nama kendaraan
-    private int capacity; // Kapasitas kendaraan
+    private final int capacity; // Kapasitas maksimal kendaraan (final, tidak bisa diubah setelah diinisialisasi)
     private int currentPassengers; // Jumlah penumpang saat ini
     private String route; // Rute perjalanan kendaraan
 
