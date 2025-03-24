@@ -13,9 +13,8 @@ public class Taxi extends Vehicle {
         // Rute perjalanan: sesuai dengan parameter yang diberikan
     }
 
-    public void calculateFare() {
-        int distance = 10; // Jarak tempuh dalam kilometer, dengan contoh 10km
-        int totalFare = getCurrentPassengers() * distance * FARE_PER_KM; // Menghitung tarif total
+    public void calculateFare(int distance) {
+        int totalFare = distance * FARE_PER_KM; // Menghitung tarif total
 
         // Menampilkan informasi total penumpang, jarak, tarif perjalanan, total tarif perjalanan
         System.out.println("Total penumpang: " + getCurrentPassengers());
