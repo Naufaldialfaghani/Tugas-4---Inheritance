@@ -5,12 +5,12 @@ public class Train extends Vehicle {
     private static final int FIXED_FARE = 10000; // Tarif tetap per penumpang (konstan)
 
     // Constructor untuk inisialisasi objek Train
-    public Train(String route) {
-        super("Kereta Commuter Line", 200, route);
+    public Train(String name, int capacity, String route) {
+        super(name, capacity, route);
         // Memanggil constructor superclass (Vehicle) dengan parameter:
-        // Nama kendaraan: "Kereta Commuter Line"
-        // Kapasitas: 200 penumpang
-        // Rute perjalanan: sesuai dengan parameter yang diberikan
+        // Nama kendaraan: sesuai parameter yang akan diberikan di main
+        // Kapasitas: sesuai dengan parameter yang akan diberikan di main
+        // Rute perjalanan: sesuai dengan parameter yang akan diberikan di main
     }
 
     // Menghitung total tarif perjalanan berdasarkan jumlah penumpang saat ini
