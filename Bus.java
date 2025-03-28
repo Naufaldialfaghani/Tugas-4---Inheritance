@@ -5,12 +5,12 @@ public class Bus extends Vehicle {
     private static final int FARE_PER_STOP = 2000; // Tarif per pemberhentian (halte)
 
     // Constructor untuk inisialisasi objek Bus
-    public Bus(String route) {
-        super("Bus TransJakarta", 50, route);
+    public Bus(String name, int capacity, String route) {
+        super(name, capacity, route);
         // Memanggil constructor superclass (Vehicle) dengan parameter:
-        // Nama kendaraan: "Bus TransJakarta"
-        // Kapasitas: 50 penumpang
-        // Rute perjalanan: sesuai dengan parameter yang diberikan
+        // Nama kendaraan: sesuai parameter yang akan diberikan di main
+        // Kapasitas: sesuai dengan parameter yang akan diberikan di main
+        // Rute perjalanan: sesuai dengan parameter yang akan diberikan di main
     }
 
     public void calculateFare(int stops) {
