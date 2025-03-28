@@ -10,9 +10,9 @@ public class Main {
     private static String GREEN = "\u001B[32m"; // Warna hijau
     public static void main(String[] args) {
         // Membuat objek kendaraan dengan rute masing-masing
-        Bus bus = new Bus("Terminal A - Terminal B");
-        Train train = new Train("Stasiun Kota - Stasiun Pusat");
-        Taxi taxi = new Taxi("Bandara - Hotel");
+        Bus bus = new Bus("Bus Trans Jakaeta", 50, "Terminal A - Terminal B");
+        Train train = new Train("Kereta Commuter Line", 200, "Stasiun Kota - Stasiun Pusat");
+        Taxi taxi = new Taxi("Taxi Bluebird", 4, "Bandara - Hotel");
 
         // Informasi pribadi aja ehehe
         System.out.println(BLUE + "================================================================");
